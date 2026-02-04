@@ -1,0 +1,48 @@
+# Agent Instructions for Method D: Mention-Span Constrained Entity Normalization
+
+## Repository
+https://github.com/auto-res2/kg-extraction-entity-normalization
+
+## Task
+Clone the repository, implement the method described in README.md, and run the experiment.
+
+## API Keys
+- GEMINI_API_KEY=REDACTED_GEMINI_API_KEY
+- OPENAI_API_KEY=(see secrets .env file)
+
+## Setup
+```bash
+git clone https://github.com/auto-res2/kg-extraction-entity-normalization
+cd kg-extraction-entity-normalization
+git clone https://github.com/YoumiMa/JacRED /tmp/JacRED
+pip install google-genai
+export GEMINI_API_KEY="REDACTED_GEMINI_API_KEY"
+```
+
+## What to Do
+1. Read the README.md thoroughly -- it contains the full experiment specification
+2. The base implementation (Baseline + Two-Stage) is already provided in the repo
+3. Implement the new method described in section 6 of the README
+4. Run the experiment: all conditions (Baseline, Two-Stage, New Method) on the same 10 dev documents
+5. The output should show a comparison table with P/R/F1 for all conditions
+6. Commit and push results (results.json + updated code) to the repository
+
+## Model Configuration
+- Use model: gemini-3-flash-preview
+- Set thinking_budget=0 in llm_client.py for fastest execution
+- If you need to change model settings, edit llm_client.py
+
+## Expected Output
+A comparison table like:
+```
+              Precision   Recall     F1    TP    FP    FN
+Baseline           ...      ...    ...   ...   ...   ...
+Two-Stage          ...      ...    ...   ...   ...   ...
+EntNorm            ...      ...    ...   ...   ...   ...
+```
+
+## Important Notes
+- Do NOT modify evaluation.py (entity alignment + P/R/F1 computation) -- keep evaluation consistent
+- Do NOT change the 10 evaluation documents or few-shot example
+- The JacRED dataset must be at /tmp/JacRED/
+- All results should be reproducible
