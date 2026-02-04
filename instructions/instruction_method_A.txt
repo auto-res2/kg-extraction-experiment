@@ -56,6 +56,10 @@ Two-Stage          ...      ...    ...   ...   ...   ...
 MajorityVote       ...      ...    ...   ...   ...   ...
 ```
 
+## Local Directories
+- This method's working directory: /Users/kumacmini/systems/kg-extraction-majority-voting/
+- Base experiment (reference): /Users/kumacmini/systems/kg_extraction/
+
 ## Important Notes
 - Do NOT modify evaluation.py (entity alignment + P/R/F1 computation) -- keep evaluation consistent
 - Do NOT change the 10 evaluation documents or few-shot example
