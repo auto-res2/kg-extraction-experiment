@@ -22,7 +22,7 @@ You MUST use subagents for all work. Never do large implementations directly.
 Clone the repository, implement the method described in README.md, and run the experiment.
 
 ## API Keys
-- GEMINI_API_KEY=REDACTED_GEMINI_API_KEY
+- GEMINI_API_KEY=(see secrets .env file)
 - OPENAI_API_KEY=(see secrets .env file)
 
 ## Setup
@@ -31,7 +31,7 @@ git clone https://github.com/auto-res2/kg-extraction-majority-voting
 cd kg-extraction-majority-voting
 git clone https://github.com/YoumiMa/JacRED /tmp/JacRED
 pip install google-genai
-export GEMINI_API_KEY="REDACTED_GEMINI_API_KEY"
+export GEMINI_API_KEY="<YOUR_GEMINI_API_KEY>"
 ```
 
 ## What to Do
