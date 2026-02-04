@@ -3,6 +3,21 @@
 ## Repository
 https://github.com/auto-res2/kg-extraction-majority-voting
 
+## Base Experiment Repository (Primary Reference)
+https://github.com/auto-res2/kg-extraction-experiment
+
+This is the primary reference for understanding the experiment context, methodology, results,
+and technical details. The README there contains comprehensive documentation including all
+model configurations, thinking budget explanations, structured outputs, evaluation methodology,
+and more. Read it before starting any work to understand the full experimental design.
+
+## Subagent Usage (MANDATORY)
+You MUST use subagents for all work. Never do large implementations directly.
+- Use subagents (Task tool with appropriate subagent_type) for all implementation, testing, and git operations.
+- Use the **coder** subagent for all code implementation and modifications -- never implement large changes directly.
+- Use the **Explore** subagent for code exploration and understanding the codebase.
+- Use the **Bash** subagent for running experiments, executing commands, and git operations.
+
 ## Task
 Clone the repository, implement the method described in README.md, and run the experiment.
 
