@@ -36,10 +36,10 @@ export GEMINI_API_KEY="<YOUR_GEMINI_API_KEY>"
 
 ## What to Do
 1. Read the README.md thoroughly -- it contains the full experiment specification
-2. The base implementation (Baseline + Two-Stage) is already provided in the repo
+2. The base implementation (Baseline) is already provided in the repo
 3. Implement the new method described in section 6 of the README
-4. Run the experiment: all conditions (Baseline, Two-Stage, New Method) on the same 10 dev documents
-5. The output should show a comparison table with P/R/F1 for all conditions
+4. Run the experiment: both conditions (Baseline, New Method) on the same 10 dev documents
+5. The output should show a comparison table with P/R/F1 for both conditions
 6. Commit and push results (results.json + updated code) to the repository
 
 ## Model Configuration
@@ -52,7 +52,6 @@ A comparison table like:
 ```
               Precision   Recall     F1    TP    FP    FN
 Baseline           ...      ...    ...   ...   ...   ...
-Two-Stage          ...      ...    ...   ...   ...   ...
 EntNorm            ...      ...    ...   ...   ...   ...
 ```
 
